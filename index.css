@@ -1,0 +1,46 @@
+body{
+    /* background-color: antiquewhite; */
+}
+
+.contianer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+    background-color: blanchedalmond;
+    padding: 10px;
+    border-radius: 30px;
+    border-left: 5px solid rgb(203, 187, 164);
+    border-bottom: 5px solid rgb(203, 187, 164);
+}
+
+.numbers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 290px;
+}
+
+#display{
+    height: 50px;
+    background-color: black;
+    width: 300px;
+    font-size: 45px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+#displays{
+    color: aliceblue;
+    margin: 0;
+    margin-left: 5px;
+}
+
+button{
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    border-radius: 20px;
+    margin: 1px;
+}
