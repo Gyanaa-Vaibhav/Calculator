@@ -1,3 +1,4 @@
+/*
 const zero = document.getElementById("zero")
 const one = document.getElementById("one")
 const two = document.getElementById("two")
@@ -8,6 +9,7 @@ const six = document.getElementById("six")
 const seven = document.getElementById("seven")
 const eight = document.getElementById("eight")
 const nine = document.getElementById("nine")
+*/
 const plus = document.getElementById("add")
 const minus = document.getElementById("minus")
 const mult = document.getElementById("multiply")
@@ -21,6 +23,7 @@ let operand
 let num = ""
 let ans = 0
 
+/*
 one.addEventListener("click", function () {
     if (operand) {
         secondNum += '1'
@@ -110,6 +113,7 @@ zero.addEventListener("click", function () {
     }
     display.textContent += 0
 })
+*/
 
 plus.addEventListener("click", function () {
     if (firstNum) {
@@ -200,3 +204,109 @@ function multiply(a, b) {
 function divide(a, b) {
     return (a/b)
 }
+
+// const methods = ['ans', 'divide', 'multiply','clear']
+
+const nmb = document.querySelector(".numbers")
+nmb.addEventListener("click", function (e) {
+    const a = e.target.id
+    // if (!(methods.includes(a))) {
+    //     // console.log("Yes")
+    // }
+
+    switch (a) {
+        case "one":
+            if (operand) {
+                secondNum += '1'
+                console.log('second')
+            } else {
+                firstNum += "1"
+            }
+            display.textContent += 1
+            break;
+        
+        case "two":
+            if (operand) {
+                secondNum += '2'
+            } else {
+                firstNum += '2'
+            }
+            display.textContent += 2
+            break;
+
+        case "three":
+            if (operand) {
+                secondNum += '3'
+            } else {
+                firstNum += '3'
+            }
+            display.textContent += 3
+            break
+        
+        case 'four':
+            if (operand) {
+                secondNum += '4'
+            }else {
+                firstNum += '4'
+            }
+            display.textContent += 4
+            break
+        
+        case 'five':
+            if (operand) {
+                secondNum += '5'
+            }else {
+                firstNum += '5'
+            }
+            display.textContent += 5
+            break
+        
+        case 'six':
+            if (operand) {
+                secondNum += "6"
+            }else {
+                firstNum += '6'
+            }
+            display.textContent += 6
+            break
+
+        case 'seven':
+            if (operand) {
+                secondNum += '7'
+            }else {
+                firstNum += '7'
+            }
+            display.textContent += 7
+            break;
+        
+        case 'eight':
+            if (operand) {
+                secondNum += '8'
+            }else {
+                firstNum += '8'
+            }
+            display.textContent += 8
+            break
+        
+        case 'nine':
+            if (operand) {
+                secondNum += '9'
+            }else {
+                firstNum += '9'
+            }
+            display.textContent += 9
+            break;
+        
+        case 'zero':
+            if (operand) {
+                secondNum += '0'
+            }else {
+                firstNum += '0'
+            }
+            display.textContent += 0
+            break
+        
+        default:
+            break;
+    }
+})
